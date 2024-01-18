@@ -5,12 +5,15 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <main>
-      <h1>Count:{count}</h1>
-      <button onClick={() => { setCount(count - 1) }}>➖</button>
-      <button onClick={() => { setCount(count + 1) }}>➕</button>
+    <div className='app-container'>
+      <h1>Count: {count}</h1>
+      <div className='button-container'>
+      <button onClick={() => { setCount(count - 1) }}>−</button>
+      <button onClick={() => { setCount(count + 1) }}>+</button>
+      </div>
+     
       
- </main>
+ </div>
   )
 }
 
